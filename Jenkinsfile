@@ -19,7 +19,7 @@ pipeline{
         }
         stage('Run the Image - Containerize') {
             steps{
-                bat 'docker run -d -p 5000:80 --name mycont mywebsite'
+                bat 'docker run -d -p 3030:80 --name mycont mywebsite'
             }
         }
     }
